@@ -1,0 +1,236 @@
+.user-input[data-v-586f15a1] {
+  background-color: #e2e5ee;
+  box-sizing: border-box;
+  color: #919297;
+  font-size: 0.85em;
+  font-weight: bold;
+  padding: 20px;
+  width: 100%;
+}
+@media (min-width: 481px) {
+.user-input[data-v-586f15a1] {
+    border-radius: 5px;
+}
+}
+@media (min-width: 769px) {
+.user-input[data-v-586f15a1] {
+    order: 1;
+    width: 45%;
+}
+}
+@media (min-width: 481px) and (max-width: 769px) {
+.user-input[data-v-586f15a1] {
+    width: 70%;
+}
+}
+.user-input .input-block[data-v-586f15a1] {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 769px) {
+.user-input .input-block[data-v-586f15a1] {
+    justify-content: left;
+}
+}
+.user-input .input-block .input[data-v-586f15a1] {
+  border: none;
+  border-radius: 5px;
+  flex-grow: 1;
+  height: 30px;
+  padding-left: 10px;
+}
+@media (min-width: 769px) {
+.user-input .input-block .input[data-v-586f15a1] {
+    max-width: 200px;
+}
+}
+.user-input .input-block .input[data-v-586f15a1]:focus,
+.user-input .input-block .input[data-v-586f15a1]:active {
+  outline: none;
+}
+.user-input .input-block .input_label[data-v-586f15a1] {
+  flex-basis: 40px;
+}
+.user-input .input-block .input_img[data-v-586f15a1] {
+  width: 25px;
+}
+.user-input .input-block .input_span[data-v-586f15a1] {
+  flex-basis: 40px;
+  text-align: right;
+}
+
+.output-block[data-v-feae845a] {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+}
+@media (min-width: 481px) and (max-width: 769px) {
+.output-block[data-v-feae845a] {
+    flex-direction: column;
+    padding-right: 0;
+    width: 30%;
+}
+}
+@media (min-width: 769px) {
+.output-block[data-v-feae845a] {
+    justify-content: flex-end;
+    order: 4;
+    padding-right: 0;
+    width: 50%;
+}
+}
+.output-block .watches[data-v-feae845a],
+.output-block .followers[data-v-feae845a] {
+  align-items: center;
+  background-color: #ebe1fc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #313133;
+  display: flex;
+  flex-basis: 45%;
+  flex-direction: column;
+  font-size: 14px;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px;
+  width: 45%;
+}
+@media (min-width: 481px) and (max-width: 769px) {
+.output-block .watches[data-v-feae845a],
+  .output-block .followers[data-v-feae845a] {
+    flex-basis: 100%;
+    margin: 0;
+    width: 100%;
+}
+}
+.output-block .watches_span[data-v-feae845a],
+.output-block .followers_span[data-v-feae845a] {
+  font-size: 18px;
+  font-weight: bold;
+}
+@media (min-width: 481px) and (max-width: 769px) {
+.output-block .watches[data-v-feae845a] {
+    margin-bottom: 10px;
+}
+.output-block .followers[data-v-feae845a] {
+    margin-top: 10px;
+}
+}
+@media (min-width: 769px) {
+.output-block .followers[data-v-feae845a] {
+    margin-left: 20px;
+}
+}
+
+.graph[data-v-1f417d2a] {
+  background-color: #f6f6f6;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 200px;
+  padding: 20px;
+  width: 100%;
+}
+@media (min-width: 481px) {
+.graph[data-v-1f417d2a] {
+    border-radius: 5px;
+}
+}
+@media (min-width: 769px) {
+.graph[data-v-1f417d2a] {
+    justify-content: flex-end;
+    margin-left: 5%;
+    order: 5;
+    width: 45%;
+}
+}
+@media (min-width: 481px) and (max-width: 769px) {
+.graph[data-v-1f417d2a] {
+    margin-top: 20px;
+}
+}
+
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#app {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+@media (min-width: 481px) {
+#app {
+    padding: 20px;
+}
+}
+@media (min-width: 481px) and (max-width: 769px) {
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+@media (min-width: 769px) {
+.content {
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+}
+.h1 {
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 769px) {
+.h1 {
+    font-size: 2em;
+    margin: 30px 0;
+}
+}
+.info-block {
+  box-sizing: border-box;
+  color: #aaa;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 769px) {
+.info-block {
+    max-width: 45%;
+    order: 0;
+    padding: 0;
+    text-align: left;
+}
+}
+.text-hint-block {
+  box-sizing: border-box;
+  color: #a7a7a7;
+  font-size: 14px;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+}
+@media (min-width: 481px) {
+.text-hint-block {
+    padding: 20px 0;
+}
+}
+@media (min-width: 769px) {
+.text-hint-block {
+    order: 2;
+    width: 45%;
+}
+}
+
