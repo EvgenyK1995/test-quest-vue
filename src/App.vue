@@ -5,8 +5,8 @@
       <p class="info-block">
         Мы пользуемся только официальными инструментами рекламы, рекомендуемыми самим YouTube, поэтому все приведённые нами просмотры, лайки и комментарии будут настоящими, а подписчики живыми и заинтересованными в тематике Вашего канала
       </p>
-      <user-input></user-input>
-      <output-block></output-block>
+      <user-input @get-cost="updateCost"></user-input>
+      <output-block :watches="getWatches" :followers="getFollowers"></output-block>
       <graph></graph>
       <p class="text-hint-block">
         Прогноз подписчиков зависит от Вашего контента. Сделайте его интересным и старайтесь не снижать планку
@@ -22,7 +22,27 @@
 
   export default {
     name: "App",
-    components: { Graph, OutputBlock, UserInput }
+    components: { Graph, OutputBlock, UserInput },
+    data() {
+      return {
+        cost: 0,
+        watches: 0.5,
+        followers: 0.2
+      }
+    },
+    computed: {
+      getWatches() {
+        return this.cost / this.watches;
+      },
+      getFollowers() {
+        return Math.round(this.getWatches * this.followers);
+      }
+    },
+    methods: {
+      updateCost(_cost) {
+        this.cost = _cost;
+      }
+    }
   }
 </script>
 

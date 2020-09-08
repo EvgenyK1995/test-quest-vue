@@ -5,7 +5,7 @@
       <label class="input_label" for="input">
         <img class="input_img" src="/src/img/rubl.png" alt="" />
       </label>
-      <input type="number" class="input" id="input" />
+      <input v-model.number="cost" type="number" class="input" id="input" />
       <span class="input_span">руб.</span>
     </div>
   </div>
@@ -13,7 +13,17 @@
 
 <script>
   export default {
-    name: "UserInput"
+    name: "UserInput",
+    data() {
+      return {
+        cost: null
+      }
+    },
+    watch: {
+      cost: function (val) {
+        this.$emit('get-cost', val);
+      }
+    }
   }
 </script>
 

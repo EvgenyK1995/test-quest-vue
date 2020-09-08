@@ -1,4 +1,4 @@
-.user-input[data-v-586f15a1] {
+.user-input[data-v-3d56e69b] {
   background-color: #e2e5ee;
   box-sizing: border-box;
   color: #919297;
@@ -8,33 +8,33 @@
   width: 100%;
 }
 @media (min-width: 481px) {
-.user-input[data-v-586f15a1] {
+.user-input[data-v-3d56e69b] {
     border-radius: 5px;
 }
 }
 @media (min-width: 769px) {
-.user-input[data-v-586f15a1] {
+.user-input[data-v-3d56e69b] {
     order: 1;
     width: 45%;
 }
 }
 @media (min-width: 481px) and (max-width: 769px) {
-.user-input[data-v-586f15a1] {
+.user-input[data-v-3d56e69b] {
     width: 70%;
 }
 }
-.user-input .input-block[data-v-586f15a1] {
+.user-input .input-block[data-v-3d56e69b] {
   align-items: center;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 @media (min-width: 769px) {
-.user-input .input-block[data-v-586f15a1] {
+.user-input .input-block[data-v-3d56e69b] {
     justify-content: left;
 }
 }
-.user-input .input-block .input[data-v-586f15a1] {
+.user-input .input-block .input[data-v-3d56e69b] {
   border: none;
   border-radius: 5px;
   flex-grow: 1;
@@ -42,26 +42,26 @@
   padding-left: 10px;
 }
 @media (min-width: 769px) {
-.user-input .input-block .input[data-v-586f15a1] {
+.user-input .input-block .input[data-v-3d56e69b] {
     max-width: 200px;
 }
 }
-.user-input .input-block .input[data-v-586f15a1]:focus,
-.user-input .input-block .input[data-v-586f15a1]:active {
+.user-input .input-block .input[data-v-3d56e69b]:focus,
+.user-input .input-block .input[data-v-3d56e69b]:active {
   outline: none;
 }
-.user-input .input-block .input_label[data-v-586f15a1] {
+.user-input .input-block .input_label[data-v-3d56e69b] {
   flex-basis: 40px;
 }
-.user-input .input-block .input_img[data-v-586f15a1] {
+.user-input .input-block .input_img[data-v-3d56e69b] {
   width: 25px;
 }
-.user-input .input-block .input_span[data-v-586f15a1] {
+.user-input .input-block .input_span[data-v-3d56e69b] {
   flex-basis: 40px;
   text-align: right;
 }
 
-.output-block[data-v-feae845a] {
+.output-block[data-v-7abdd485] {
   align-items: center;
   box-sizing: border-box;
   display: flex;
@@ -70,22 +70,22 @@
   width: 100%;
 }
 @media (min-width: 481px) and (max-width: 769px) {
-.output-block[data-v-feae845a] {
+.output-block[data-v-7abdd485] {
     flex-direction: column;
     padding-right: 0;
     width: 30%;
 }
 }
 @media (min-width: 769px) {
-.output-block[data-v-feae845a] {
+.output-block[data-v-7abdd485] {
     justify-content: flex-end;
     order: 4;
     padding-right: 0;
     width: 50%;
 }
 }
-.output-block .watches[data-v-feae845a],
-.output-block .followers[data-v-feae845a] {
+.output-block .watches[data-v-7abdd485],
+.output-block .followers[data-v-7abdd485] {
   align-items: center;
   background-color: #ebe1fc;
   border-radius: 5px;
@@ -101,33 +101,33 @@
   width: 45%;
 }
 @media (min-width: 481px) and (max-width: 769px) {
-.output-block .watches[data-v-feae845a],
-  .output-block .followers[data-v-feae845a] {
+.output-block .watches[data-v-7abdd485],
+  .output-block .followers[data-v-7abdd485] {
     flex-basis: 100%;
     margin: 0;
     width: 100%;
 }
 }
-.output-block .watches_span[data-v-feae845a],
-.output-block .followers_span[data-v-feae845a] {
+.output-block .watches_span[data-v-7abdd485],
+.output-block .followers_span[data-v-7abdd485] {
   font-size: 18px;
   font-weight: bold;
 }
 @media (min-width: 481px) and (max-width: 769px) {
-.output-block .watches[data-v-feae845a] {
+.output-block .watches[data-v-7abdd485] {
     margin-bottom: 10px;
 }
-.output-block .followers[data-v-feae845a] {
+.output-block .followers[data-v-7abdd485] {
     margin-top: 10px;
 }
 }
 @media (min-width: 769px) {
-.output-block .followers[data-v-feae845a] {
+.output-block .followers[data-v-7abdd485] {
     margin-left: 20px;
 }
 }
 
-.graph[data-v-1f417d2a] {
+.graph[data-v-2661bd1c] {
   background-color: #f6f6f6;
   border: 1px solid #efefef;
   box-sizing: border-box;
@@ -136,12 +136,12 @@
   width: 100%;
 }
 @media (min-width: 481px) {
-.graph[data-v-1f417d2a] {
+.graph[data-v-2661bd1c] {
     border-radius: 5px;
 }
 }
 @media (min-width: 769px) {
-.graph[data-v-1f417d2a] {
+.graph[data-v-2661bd1c] {
     justify-content: flex-end;
     margin-left: 5%;
     order: 5;
@@ -149,7 +149,7 @@
 }
 }
 @media (min-width: 481px) and (max-width: 769px) {
-.graph[data-v-1f417d2a] {
+.graph[data-v-2661bd1c] {
     margin-top: 20px;
 }
 }

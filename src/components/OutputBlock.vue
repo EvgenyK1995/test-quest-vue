@@ -14,12 +14,10 @@
 <script>
   export default {
     name: "OutputBlock",
-    data() {
-      return {
-        watches: 9090,
-        followers: 100
-      }
-    }
+    props: [
+      'watches',
+      'followers'
+    ]
   }
 </script>
 
