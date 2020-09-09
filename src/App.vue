@@ -7,7 +7,7 @@
       </p>
       <user-input @get-cost="updateCost"></user-input>
       <output-block :watches="getWatches" :followers="getFollowers"></output-block>
-      <graph></graph>
+      <graph :data-list="getDataList"></graph>
       <p class="text-hint-block">
         Прогноз подписчиков зависит от Вашего контента. Сделайте его интересным и старайтесь не снижать планку
       </p>
@@ -36,6 +36,15 @@
       },
       getFollowers() {
         return Math.round(this.getWatches * this.followers);
+      },
+      getDataList() {
+        let data = [];
+        for (let i = 0; i < 6; i++){
+          data[i] = Math.round(this.getFollowers / (i + 1) * Math.random());
+        }
+        data[data.length] = this.getFollowers;
+
+        return data;
       }
     },
     methods: {
@@ -67,7 +76,7 @@
       flex-wrap wrap
     @media (min-width 769px)
       display flex
-      height 350px
+      height 375px
       flex-direction column
       flex-wrap wrap
 

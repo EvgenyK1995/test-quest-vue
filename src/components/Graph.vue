@@ -1,6 +1,6 @@
 <template>
   <div class="graph">
-    <canvas id="myChart"></canvas>
+    <canvas id="followersGraph"></canvas>
   </div>
 </template>
 
@@ -8,37 +8,41 @@
   import Chart from 'chart.js';
 
   export default {
-    name: "Graph",
+    name: 'Graph',
+    props: ['dataList'],
+    data() {
+      return {
+        followersGraph: null
+      };
+    },
+    watch: {
+      dataList: function () {
+        this.updateGraph();
+      }
+    },
     mounted() {
+      const ctx = document.getElementById('followersGraph').getContext('2d');
+      const gradient = ctx.createLinearGradient(100,0,150,200);
+      gradient.addColorStop(1,'rgba(142, 86, 233, 0)');
+      gradient.addColorStop(0,'rgba(142, 86, 233, 0.31)');
 
-      let ctx = document.getElementById('myChart').getContext('2d');
-      let myChart = new Chart(ctx, {
-        type: 'bar',
+      this.followersGraph = new Chart(ctx, {
+        type: 'line',
         data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          labels: ['1 день', '2 день', '3 день', '4 день', '5 день', '6 день', '7 день'],
           datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
-            ],
+            //data: [0,0,0,0,0,0,0],
+            backgroundColor: gradient,
+            borderColor: '#7045C4',
             borderWidth: 1
           }]
         },
         options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            display: false,
+          },
           scales: {
             yAxes: [{
               ticks: {
@@ -48,17 +52,27 @@
           }
         }
       });
+    },
+    methods: {
+      updateGraph() {
+        this.followersGraph.data.datasets.forEach((dataset) => {
+          dataset.data.length = 0;
+          dataset.data = this.dataList;
+        });
+
+        this.followersGraph.update();
+      }
     }
   }
 </script>
 
 <style lang="stylus" scoped>
   .graph
-    background-color #f6f6f6
     border 1px solid #efefef
     box-sizing border-box
     height 200px
     padding 20px
+    position relative
     width 100%
     @media (min-width 481px)
       border-radius 5px
